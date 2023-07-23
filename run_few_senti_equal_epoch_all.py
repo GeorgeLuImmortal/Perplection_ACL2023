@@ -22,7 +22,7 @@ if __name__ == '__main__':
     parser.add_argument('--epochs', default=20, type=int, help="number of epoch")
     parser.add_argument('--batch_size', default=2, type=int, help="batch size")
     parser.add_argument('--eval_batch_size', default=4, type=int, help="batch size")
-    parser.add_argument('--model', default='./models/my_roberta/', type=str, help="pretrained model dir")
+    parser.add_argument('--model', default='./models/my_bert/', type=str, help="pretrained model dir")
     parser.add_argument('--output_dir', default='./ft_models', type=str, help="save tuned model dir")
     parser.add_argument('--result_output_dir', default='./ft_fewshot_results_equal/', type=str, help="exp result dir")
     parser.add_argument('--dataset_dir', default='./datasets/', type=str, help="dataset dir")

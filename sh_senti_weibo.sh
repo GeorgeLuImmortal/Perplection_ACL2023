@@ -1,5 +1,5 @@
-declare -a arr=("满意" "可以" "好" "行" "喜欢" "高兴" "开心")
-# declare -a arr=("黑")
+# declare -a arr=("满意" "可以" "好" "行" "喜欢" "高兴" "开心")
+declare -a arr=("开心")
 
 ## now loop through the above array
 for template in "${arr[@]}"

@@ -75,7 +75,7 @@ if __name__ == '__main__':
     tokenizer = BertTokenizer.from_pretrained(f'{args.tokenizer}')
     pretrained_model = BertForMaskedLM.from_pretrained(args.model).to(device)
 
-    pd_all = pd.read_csv(f'{args.input_data}{args.task}_output_test.csv',names=['labels','text'],header=0)
+    pd_all = pd.read_csv(f'{args.input_data}{args.task}_output.csv',names=['labels','text'],header=0)
     texts = pd_all.text.tolist()
     labels = pd_all.labels.tolist()
 
